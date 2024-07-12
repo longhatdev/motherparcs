@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang='en' data-theme='forest' class="snap-mandatory snap-y">
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='description' content='Astro description' />
+		<meta name='viewport' content='width=device-width' />
+		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+		<meta name='generator' content={Astro.generator} />
+		<link rel='preconnect' href='https://fonts.googleapis.com' />
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+		<link
+			href='https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap'
+			rel='stylesheet'
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+		<title>{title}</title>
+	</head>
+	<!-- You can add or remove the tailwind classes below or tweak the daisy ui theme -->
+	<body
+		class='prose-headings:font-[anybody] prose-headings:font-bold '
+		>
+		<div class="scroll-watcher"></div>
+		<section class=`h-lvh snap-start grid place-items-center ${merge}`>
+			<div
+				class="hero min-h-screen"
+				style="background-image: url('c4.webp');">
+				<div class="hero-overlay bg-opacity-60"></div>
+				<div class="hero-content text-neutral-content text-center">
+					<div class="max-w-md">
+						<h1 class="mb-5 text-5xl font-bold">Hi MOM</h1>
+						<p class="mb-5">Alles Liebe und Gute zu deinem 70. Geburtstag!</p>
+					</div>
+				</div>
+			</div>
+			<script>
+			setTimeout(()=>{
+				window.confetti();
+				}, 500)
+
+			setTimeout(()=>{
+				window.confetti();
+				}, 2000)
+			setTimeout(()=>{
+				window.confetti();
+				}, 2000)
+			</script>
+		</section>
+
+
+
+	</body>
+</html>
+
