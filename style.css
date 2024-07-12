@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box
+}
+
+.scroll-watcher {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+	background-color: oklch(var(--su));
+	height: 5px;
+	scale: 0 1;
+	transform-origin: left;
+	animation: scroll-watcher linear;
+	animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+to {scale: 1 1;}
+}
+
